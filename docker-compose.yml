@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  invoicer:
+    image: docker.io/futyann/invoicer:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    networks:
+      - invoicer-network
+
+networks:
+  invoicer-network:
+    driver: bridge
