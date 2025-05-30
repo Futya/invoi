@@ -1,5 +1,4 @@
-name: Docker Build and Push
-
+name: Docker Build and Push # Добавьте эту строку в начало
 on:
   push:
     branches: [ "main" ]
